@@ -11,6 +11,16 @@ namespace UnityEngine
         {
             component["trans"] = new Transform();
         }
+        public GameObject(short s)
+        {
+            component["trans"] = new Transform();
+            this.id = s;
+        }
+        short id;
+        public short GetId()
+        {
+            return id;
+        }
         public void Destory()
         {
             component.Clear();
